@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="https://www.w3schools.com">About</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="#gallery-admin">Admin</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <div id="gallery-admin">
+        <h2 class="heading">Admin Gallery</h2>
+        <div class="container">
+            <div class="row">
+                <div class="gallery-btn" style="width:33%;">
+                    <span>
+                        <button type="button" class="btn-rounded" id="addImage" data-toggle="modal" data-target="#addModal">Add image</button>
+                    </span>
+                </div>
+                <div class="gallery-btn" style="width:33%;">
+                    <button type="button" class="btn-rounded" id="editImage">Edit image</button>
+                </div>
+                <div class="gallery-btn" style="width:33%">
+                    <button type="button" class="btn-rounded" id="removeImage" onclick='window.location ="gallery-admin.html";'>Remove image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #gallery-admin -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
